@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.cache
+*.so
+*.dist-info/
+*.egg-info/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+# IDE Specific (VS Code)
+.vscode/
+*.code-workspace
+
+# Data/Media (Optional: Uncomment if you don't want to push large audio files)
+# *.wav

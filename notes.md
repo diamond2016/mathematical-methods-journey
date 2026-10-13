@@ -42,6 +42,19 @@ Every week has:
 
 - exercise.ipynb (The Lab): This is your "Experiment." This is where you write code, run it, and see the graphs. It is an interactive playground.
 
+## The virtual environment for weeks programming examples
+1. Create the virtual environment
+`python -m venv .venv`
+
+2. Activate it
+# On Windows:
+`.venv\Scripts\activate`
+# On Mac/Linux:
+`source .venv/bin/activate`
+
+3. Install the "Starter Pack" of libraries
+pip install numpy matplotlib scipy ipykernel
+
 ## Jupyter "Quick Start"
 
 Jupyter "Quick Start" (The Only Shortcuts You Need)
@@ -71,3 +84,23 @@ Result: The value of $z$ is increasing.
 2. Block Math (The \$$ ... \$$ rule): Use double dollar signs when you want the equation to be centered on its own line and look "big."
 
 Example: $$z = x + iy$$
+
+
+
+## How to operate in VS Code 🛠️
+
+For Notebooks (.ipynb):
+
+1. Open the main repository folder in VS Code (`code .`).
+2. Open any notebook inside a subfolder.
+3. In the top right of the notebook, click on "Select Kernel".
+4. Choose Python Environments... and select the global `.venv` located in the project root (usually indicated as `./.venv/bin/python`).
+5. VS Code will remember this choice for other notebooks.
+
+For standard Python programs (.py):
+
+1. Open a `.py` file in any subfolder.
+2. In the bottom right of the VS Code status bar, you will see the active Python version (e.g., Python 3.10.x). Click on it.
+3. Alternatively, press `Ctrl + Shift + P`, type "Python: Select Interpreter" and press Enter.
+4. Select the `.venv` folder in the root directory. This way, when you run the `.py` file by pressing the "Play" button in the top right, VS Code will automatically use the correct environment with `numpy`, `matplotlib`, and `scipy` already ready.
+

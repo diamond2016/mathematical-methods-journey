@@ -4,6 +4,9 @@
 
 ```text
 mathematical-methods-journey/
+├── .venv/                  <-- virtual env centralized
+├── requirements.txt 
+|  
 ├── week01-complex-numbers/
 ├── week02-euler/
 ├── week03-mappings/

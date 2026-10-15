@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-
 """
 Informations:
 set_xlim(-0.95, 5)	Shows the asymptote at x = -1 and the interesting behavior near it

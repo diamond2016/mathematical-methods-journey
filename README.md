@@ -23,6 +23,7 @@ mathematical-methods-journey/
 ├── week14-poles-zeros/
 ├── week15-transfer-functions/
 └── week16-final-project/
+└── integrals/
 ```
 
 ## Main Source
@@ -116,6 +117,8 @@ mathematical-methods-journey/
 ### Week 16: Final Project
 *   **Option A:** Implement a Python pipeline for signal generation, FFT, filtering, and inverse transform.
 *   **Option B:** Simulate a dynamic system using Laplace transforms.
+
+### Integrals: Recap about integrals
 
 ---
 

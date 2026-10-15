@@ -1,19 +1,12 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-"""
-Informations:
-set_xlim(-0.95, 5)	Shows the asymptote at x = -1 and the interesting behavior near it
-x = np.linspace(-0.95, 5, 1000)	Dense sampling for a block curve
-y = f(x)	The actual function
-ax.plot(x, y, ...)	Draws the curve
-ax.axvline(-1, ...)	Dashed red line marking the vertical asymptote
-plt.legend()	Shows the function label and asymptote annotation
-Updated title	Reflects the actual function
-The plot will show ln(1/(x+1)) approaching +∞ as x → -1⁺ and slowly decreasing toward 0 as x → ∞.
-Use ax.fill_between(x, y, 0, where=(x >= 1) & (x <= 4), ...) — this fills the region between the curve and the x-axis, only
-Instead of full vertical lines, use ax.plot([1, 1], [0, f(1)], ...) to draw a segment from y=0 up to the curve
-\approx is the approximation symbol in LaTeX
+"""Plot f(x) = 1/(x+1) and its antiderivative h(x) = ln|x+1|.
+
+Features:
+    - Vertical asymptote at x = -1
+    - Filled area: definite integral ∫₁⁴ 1/(x+1) dx ≈ 0.92
+    - Vertical line segments at the integration bounds (x = 1, x = 4)
 """
 
 # function to study

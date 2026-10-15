@@ -235,4 +235,24 @@ Run Ruff when source code is stable.
 .venv/bin/ruff format .
 ```
 
-Configuration lives in `pyproject.toml` under `[tool.ruff]`."
+Configuration lives in `pyproject.toml` under `[tool.ruff]`.
+
+## Tests
+
+Use `pytest` for automated tests. Put tests in a `tests/` directory, name files
+`test_*.py`, and name test functions `test_*`. Run the suite from the repository
+root with:
+
+```bash
+.venv/bin/python -m pytest
+```
+
+- Test observable behavior and public contracts rather than implementation details.
+- Use plain `assert` statements; pytest provides useful assertion introspection.
+- Use `@pytest.mark.parametrize` for the same behavior across multiple inputs.
+- Use fixtures for shared setup and teardown, and `monkeypatch` to isolate
+  external side effects such as plotting, filesystem, or environment access.
+- Keep tests deterministic and independent; do not rely on network access,
+  execution order, or state left by another test.
+- Follow the Python source code documentation and type-hint rules in this file
+  for test modules and helper functions as well."

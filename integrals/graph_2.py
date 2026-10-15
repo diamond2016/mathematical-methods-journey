@@ -4,6 +4,7 @@ Features:
     - Vertical asymptote at x = 3/2 pi
 """
 from math import pi
+
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -30,7 +31,7 @@ def main() -> None:
 
     ax.plot(x, y, color="steelblue", linewidth=2, label=r"$f(x) = \frac{1}{x+1}$")
     ax.plot(x, y_h, color="seagreen", linewidth=2, label=r"$h(x) = \ln|x+1|$")
-    ax.axvline((3/2)*pi, color="red", linestyle="--", linewidth=1, label=rf"asymptote x = 3\2 pi")
+    ax.axvline((3/2)*pi, color="red", linestyle="--", linewidth=1, label=r"asymptote x = 3\2 pi")
 
 
     plt.axhline(0, color="black", linewidth=0.5)

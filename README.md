@@ -118,8 +118,6 @@ mathematical-methods-journey/
 *   **Option A:** Implement a Python pipeline for signal generation, FFT, filtering, and inverse transform.
 *   **Option B:** Simulate a dynamic system using Laplace transforms.
 
-### Integrals: Recap about integrals
-
 ---
 
 ## Bonus: Computational Science (Month 5)
@@ -133,6 +131,7 @@ mathematical-methods-journey/
     *   Finite differences
     *   Numerical Linear Algebra
 
+### Bonus Integrals: Recap about integrals (During the course)
 ---
 
 ## Project Guidelines & Philosophy

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pytest
 
-from integrals import graph_1
+from integrals import graph_01_1
 
 
 @pytest.mark.parametrize(
@@ -13,14 +13,14 @@ from integrals import graph_1
 )
 def test_f_returns_reciprocal_values(x: float, expected: float) -> None:
     """Return the reciprocal values for inputs away from the asymptote."""
-    assert graph_1.f(x) == pytest.approx(expected)
+    assert graph_01_1.f(x) == pytest.approx(expected)
 
 
 def test_f_accepts_numpy_arrays() -> None:
     """Evaluate the function elementwise for plotting arrays."""
     x = np.array([0.0, 1.0, -2.0])
 
-    np.testing.assert_allclose(graph_1.f(x), [1.0, 0.5, -1.0])
+    np.testing.assert_allclose(graph_01_1.f(x), [1.0, 0.5, -1.0])
 
 
 @pytest.mark.parametrize(
@@ -29,7 +29,7 @@ def test_f_accepts_numpy_arrays() -> None:
 )
 def test_h_returns_log_absolute_values(x: float, expected: float) -> None:
     """Return the logarithm of the absolute shifted input."""
-    assert graph_1.h(x) == pytest.approx(expected)
+    assert graph_01_1.h(x) == pytest.approx(expected)
 
 
 def test_main_builds_and_displays_plot(monkeypatch: pytest.MonkeyPatch) -> None:
@@ -39,7 +39,7 @@ def test_main_builds_and_displays_plot(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.setattr(plt, "show", lambda: show_calls.append(None))
 
     try:
-        graph_1.main()
+        graph_01_1.main()
 
         assert axes.get_xlim() == (-2.0, 5.0)
         assert axes.get_ylim() == (-5.0, 5.0)

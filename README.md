@@ -1,5 +1,11 @@
 # Mathematical Methods: A Journey
 
+This is a mathematical journey about complex numbers from the view of an CS professional.
+
+I'll use this repo to better use python linters, notebooks, lintes and so on.
+
+Take a look at guidelines.
+
 ## Repository Structure
 
 ```text

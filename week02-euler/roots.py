@@ -97,7 +97,10 @@ def visualize_n_th_roots(z: complex, n: int) -> None:
 
 
 # Practical example: compute and visualize the cube roots (n = 3) of z = -8
-visualize_n_th_roots(z=-8 + 0j, n=3)
+# visualize_n_th_roots(z=-8 + 0j, n=3)
+
+# Another practical example: compute and visualize the 5-roots (n = 5) of z = 1
+visualize_n_th_roots(z=1 + 0j, n=5)
 
 # You can try other examples by modifying the parameters, e.g.:
 # visualize_n_th_roots(z=1 + 1j, n=4)  # Fourth roots of 1 + i
